@@ -1,3 +1,82 @@
-/* 
-    General Styles
-*/
+@import "src/img/gathering-2.mp4";
+
+
+$primary-color: white;
+
+
+.logo {
+    width: 168px;
+    height: 60px;
+}
+
+.lol {
+    color: #00a2c7!important;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+
+.jumbotron {
+position: relative;
+overflow: hidden;
+height: 400px;
+}
+
+.jumbotron .container {
+position: relative;
+z-index: 10;
+}
+
+.eventtitle {
+    margin-left: 20px;
+}
+.container {
+    padding-top: 30px;
+}
+
+.jumbotron-heading,.container{
+    color: $primary-color;
+}
+
+.linkcolor {
+    color:  #00a2c7!important;
+}
+
+.bttnsize {
+    width: 40%!important;
+    margin-left: 60px;
+}
+
+.bttnsize2 {
+    width: 30%!important;
+    margin-left: 60px;
+}
+.bttnsize3 {
+    width: 30%!important;
+    margin-left: 25px;
+}
+.card-adjustment{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#seeall {
+    float: right;
+    padding-right: 40px;
+    color: #00a2c7!important;
+}
+
+#seeall2 {
+    margin-left: 93%;
+    margin-bottom: 20px;
+    color: #00a2c7!important;
+}

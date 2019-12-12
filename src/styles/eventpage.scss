@@ -1,0 +1,44 @@
+$primary-color: black;
+
+.container-fluid {
+    
+    margin: 0px;
+    padding: 0px;
+    background-color: #f8f4f4;
+}
+.title, .eventdetails {
+    color: $primary-color;
+}
+
+.question {
+    margin-left: 5px;
+}
+
+.eventdetails {
+    margin-top: 15px;
+}
+
+.imagemap {
+    width: 60%;
+    margin-left: 50px;
+}
+
+.card-list {
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.bttnsize2 {
+    float: right;
+}
+
+.rvsp {
+    float: right;
+    margin-top: -60px;
+    color: black;
+}
+
+.rvspbtn {
+    width: 40%;
+}

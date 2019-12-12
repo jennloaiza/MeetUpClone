@@ -1,17 +1,45 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../img/meetuplogo.png";
+import React, { useState } from "react";
 
-export const Navbar = () => {
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from "reactstrap";
+import "../../styles/home.scss";
+
+const Navi = props => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => setIsOpen(!isOpen);
+
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
-			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-			</Link>
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
-				</Link>
-			</div>
-		</nav>
+		<div>
+			<Navbar color="light" light expand="md">
+				<NavbarBrand href="/">
+					{" "}
+					<img className="logo" src={logo} />{" "}
+				</NavbarBrand>
+				<NavbarToggler onClick={toggle} />
+				<Collapse isOpen={isOpen} navbar>
+					<Nav className="ml-auto" navbar>
+						<NavItem>
+							<NavLink tag={Link} to="/demo" className="lol">
+								Start a new group
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink tag={Link} to="/login">
+								Log in
+							</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink tag={Link} to="/signup">
+								Sign up
+							</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</Navbar>
+		</div>
 	);
 };
+
+export default Navi;
